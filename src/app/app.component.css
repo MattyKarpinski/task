@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Satisfy&display=swap');
+
+  :host {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    color: #032539;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+  }
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: Satisfy, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.head {
+
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: #fbf3f2;
+  }
+
+.head img {
+    width: 45px;
+    height: 45px;
+}
+
+.main {
+    background-color: #fbf3f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main img {
+    width: 25%;
+    height: 25%;
+}
+
+.main_info {
+    width: 500px;
+    text-align: center;
+}
+
+.main_info button {
+    width: auto;
+    height: 70px;
+    padding: 16px 32px;
+    margin-top: 32px;
+    border-radius: 50px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    border: none;
+    background-color: #1c768f;
+    color: #fa991c;
+}
+
+.tool {
+    background-color: #fbf3f2;
+    height: 100vh;
+}
+
+.tool select {
+    width: 200px;
+    height: 50px;
+}
+
+
+
