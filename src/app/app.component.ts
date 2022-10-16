@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PostService } from './services/post.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,16 @@ import { Component } from '@angular/core';
 })
 
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'psintagram';
+  posts:any = []
+
+  constructor(private api:PostService) {}
+
+  ngOnInit() {
+    this.api.apiCall().subscribe(data => {
+        this.posts = data;
+      });
+  }
   
 }

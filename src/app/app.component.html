@@ -12,11 +12,18 @@
   <img src="../assets/bigdog.svg" alt="big dog">
 </section>
 <section class="tool">
-  <select id="dogs" name="xd" >
-    <option></option>
-    <option value="x">z</option>
-    <option value="x">z</option>
-    <option value="x">z</option>
+  <select type="text" id="dogs" name="xd" >
+    <option>--Choose the breed---</option>
+    <option 
+
+    ></option>
   </select>
+  <div>
+    <ul class="list-group">
+      <li
+      *ngFor = "let post of posts"
+      class="list">{{post.message}}</li>
+    </ul>
+  </div>
 </section>
 
