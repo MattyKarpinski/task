@@ -6,7 +6,7 @@
   <img src="../assets/bone.svg" alt="bone">
   <div class="main_info">
     <h2>Welcome to our site, the best tool to search info abuot our four legs friends</h2>
-    <button>Check out tool </button>
+      <button>Check out tool </button>
     
   </div>
   <img src="../assets/bigdog.svg" alt="big dog">
@@ -15,15 +15,12 @@
   <select type="text" id="dogs" name="xd" >
     <option>--Choose the breed---</option>
     <option 
-
-    ></option>
+    *ngFor = "let dog of posts"
+    class="list">{{dog.breed}}
+    
+  </option>
   </select>
-  <div>
-    <ul class="list-group">
-      <li
-      *ngFor = "let post of posts"
-      class="list">{{post.message}}</li>
-    </ul>
-  </div>
+  {{title}}
+  <app-dog-list></app-dog-list>
 </section>
 
